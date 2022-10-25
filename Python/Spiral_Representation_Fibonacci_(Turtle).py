@@ -44,6 +44,7 @@ def fiboPlot(n):
 	x.penup()
 	x.setposition(factor, 0)
 	x.seth(0)
+	x.pendown()
 
 	# Setting the colour of the plotting pen to red
 	x.pencolor("red")
@@ -76,7 +77,7 @@ n = int(input('Enter the number of iterations (must be > 1): '))
 if n > 0:
 	print("Fibonacci series for", n, "elements :")
 	x = turtle.Turtle()
-	x.speed(1000)
+	x.speed(100)
 	fiboPlot(n)
 	turtle.done()
 else:
