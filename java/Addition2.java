@@ -10,8 +10,7 @@ public class Addition2
  }   
  public int sum()
  {
-     int s=a+b;
-     return(s);
+     return(a+b);
  }
  public static void main(String args[])
  {
@@ -21,7 +20,6 @@ public class Addition2
      int y=sc.nextInt();
      Addition2 ob=new Addition2();
      ob.input(x,y);
-     int s=ob.sum();
-     System.out.println("The sum is"+s);
+     System.out.println("The sum is"+ob.sum());
  }
 }
